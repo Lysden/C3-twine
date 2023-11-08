@@ -1,0 +1,262 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Twine.",
+	"text": {
+		"plugins": {
+			"twine": {
+				"name": "Twine",
+				"description": "Import and use dialogues from Twine",
+				"help-url": "http://",
+				"properties": {
+				},
+				"aceCategories": {
+					"settings": "Settings",
+					"links": "Links",
+					"tags": "Tags",
+					"passage": "Passage",
+					"encryption": "Encryption",
+					"variables": "Variables",
+					"objects": "Objects",
+					"functions": "Functions",
+					"save": "Save"
+				},
+				"conditions": {
+					"canmovealong0": {
+						"list-name": "Passage has links",
+						"display-text": "{my} passage has links",
+						"description": "True when the current passage has links to other passages."
+						},
+					"testfortag1": {
+						"list-name": "Test for tag",
+						"display-text": "{my} passage has tag {0}",
+						"description": "True when the current passage contains the listed tag.",
+						"params": {
+							"tag0": { "name":"Tag", "desc":"Enter the tag to test for."}
+						}
+						},
+					"testforname2": {
+						"list-name": "Test for name",
+						"display-text": "{my} passage has name {0}",
+						"description": "True when the current passage name matches the test.",
+						"params": {
+							"name0": { "name":"Name", "desc":"Enter the name to test for."}
+						}
+						},
+					"hasfunctioncall3": {
+						"list-name": "Has function call",
+						"display-text": "{my} passage has function call data",
+						"description": "True when the current passage has function call data."
+						},
+					"hasvariabledata4": {
+						"list-name": "Has variable",
+						"display-text": "{my} passage has variable data",
+						"description": "True when the current passage has variable data."
+						},
+					"hastagdata5": {
+						"list-name": "Has tag",
+						"display-text": "{my} passage has tag data",
+						"description": "True when the current passage has tag data."
+						},
+					"hasreferencedata6": {
+						"list-name": "Has object reference",
+						"display-text": "{my} passage has object reference data",
+						"description": "True when the current passage has object reference data."
+						}
+				},
+				"actions": {
+					"addstoryjson0": {
+						"list-name": "Load story",
+						"display-text": "{my} Enter story data {0}.",
+						"description": "Enter a story from a JSON string.",
+						"params": {
+							"json0": { "name":"JSON", "desc":"Enter a JSON string for the dialogue."}
+						}
+					},
+					"selectstoryname1": {
+						"list-name": "Select story",
+						"display-text": "{my} Select active story: {0}.",
+						"description": "Select the active story.",
+						"params": {
+							"story0": { "name":"Story", "desc":"Enter the name of the story."}
+						}
+					},
+					"selectfirstpassage2": {
+						"list-name": "Select first passage",
+						"display-text": "{my} Select first passage in this story.",
+						"description": "Select the first passage that was marked >start the story here< in the current story."
+					},
+					"selectpassagebyname3": {
+						"list-name": "Go to passage - name",
+						"display-text": "{my} Select passage name: {0}.",
+						"description": "Select a passage by its name",
+						"params": {
+							"passage0": { "name":"Passage", "desc":"Enter the name of the passage."}
+						}
+					},
+					"selectpassagebyid4": {
+						"list-name": "Go to passage - ID",
+						"display-text": "{my} Select passage ID: {0}.",
+						"description": "Select a passage by name.",
+						"params": {
+							"index0": { "name":"Index", "desc":"Enter the ID number of the passage."}
+						}
+					},
+					"addencryptedstoryjson5": {
+						"list-name": "Load encrypted story",
+						"display-text": "{my} Load encrypted story data {0}, key {1}.",
+						"description": "Enter an encrypted story from a JSON string.",
+						"params": {
+							"json0": { "name":"JSON", "desc":"Enter an encrypted JSON story."},
+							"key1": { "name":"Key", "desc":"Enter an encryption key."}
+						}
+					},
+					"loadpluginfromjson6": {
+						"list-name": "Load plugin JSON",
+						"display-text": "{my} Load the plugin from {0}.",
+						"description": "Load the plugin from a JSON string.",
+						"params": {
+							"json0": { "name":"JSON", "desc":"Load the plugin JSON."}
+						}
+					},
+					"cleanoutallstories7": {
+						"list-name": "Delete all stories",
+						"display-text": "{my} Delete all stories",
+						"description": "Clear out all stories from the plugin memory."
+					},
+					"deletestory8": {
+						"list-name": "Delete a story",
+						"display-text": "{my} Delete story: {0}.",
+						"description": "Delete the named story.",
+						"params": {
+							"story0": { "name":"Story", "desc":"Enter the name of the story."}
+						}
+					}
+				},
+				"expressions": {
+					"numberoflinks0": {
+						"description": "Return the number of choices that are available in this passage.",
+						"translated-name": "NumberOfLinks"
+						},
+					"linknumberid1": {
+						"description": "Return the ID number of the next passage, at index.",
+						"translated-name": "LinkNumberID",
+						"params": {
+							"index0": { "name":"Index", "desc":"Enter the index number."}
+						}
+						},
+					"linktextid2": {
+						"description": "Return the ID name of the next passage, at index.",
+						"translated-name": "LinkTextID",
+						"params": {
+							"index0": { "name":"Index", "desc":"Enter the index number."}
+						}
+						},
+					"linklabeltext3": {
+						"description": "Return the text to be displayed on the decision label, at index.",
+						"translated-name": "LinkLabelText",
+						"params": {
+							"index0": { "name":"Index", "desc":"Enter the index number."}
+						}
+						},
+					"numberoftags4": {
+						"description": "Return the number of tags that are in this passage.",
+						"translated-name": "NumberOfTags"
+						},
+					"tagatindex5": {
+						"description": "Return the tag at index from this passage.",
+						"translated-name": "TagAtIndex",
+						"params": {
+							"index0": { "name":"Index", "desc":"Enter the index number."}
+						}
+						},
+					"passagetext6": {
+						"description": "Return the text in this passage.",
+						"translated-name": "PassageText"
+						},
+					"passagename7": {
+						"description": "Return the name of the passage (same string used in a link name).",
+						"translated-name": "PassageName"
+						},
+					"getencryptedstory8": {
+						"description": "Return an encrypted JSON string of the active story.",
+						"translated-name": "GetEncryptedStory",
+						"params": {
+							"key0": { "name":"Key", "desc":"Enter an encryption key."}
+						}
+						},
+					"passageid9": {
+						"description": "Return the ID number of this dialogue.  Reference the JSON map pid number.",
+						"translated-name": "PassageID"
+						},
+					"noofvariables10": {
+						"description": "Return the number of variables that were declared in this passage.",
+						"translated-name": "NoOfVariables"
+						},
+					"noofobjectrefs11": {
+						"description": "Return the number of object references that were declared in this passage.",
+						"translated-name": "NoOfObjectRefs"
+						},
+					"objectrefatindex12": {
+						"description": "Return the object reference at index from this passage.",
+						"translated-name": "ObjectRefAtIndex",
+						"params": {
+							"index0": { "name":"Index", "desc":"Enter the index number."}
+						}
+						},
+					"variableatindex13": {
+						"description": "Return the variable at index from this passage.",
+						"translated-name": "VariableAtIndex",
+						"params": {
+							"index0": { "name":"Index", "desc":"Enter the index number."}
+						}
+						},
+					"variablevalueatindex14": {
+						"description": "Return the variable value at index from this passage.",
+						"translated-name": "VariableValueAtIndex",
+						"params": {
+							"index0": { "name":"Index", "desc":"Enter the index number."}
+						}
+						},
+					"nooffunctioncalls15": {
+						"description": "Return the number of function calls that were declared in this passage.",
+						"translated-name": "NoOfFunctionCalls"
+						},
+					"functioncallatindex16": {
+						"description": "Return the function data at index from this passage.",
+						"translated-name": "FunctionCallAtIndex",
+						"params": {
+							"index0": { "name":"Index", "desc":"Enter the index number."}
+						}
+						},
+					"functionparamsatindex17": {
+						"description": "Return the function data at index from this passage in comma separated format.",
+						"translated-name": "FunctionParamsAtIndex",
+						"params": {
+							"index0": { "name":"Index", "desc":"Enter the index number."}
+						}
+						},
+					"tagsasjson18": {
+						"description": "Return the tags from this passage in array.AsJSON format.",
+						"translated-name": "TagsAsJSON"
+						},
+					"objectsasjson19": {
+						"description": "Return the object refs from this passage in array.AsJSON format.",
+						"translated-name": "ObjectsAsJSON"
+						},
+					"functionsasjson20": {
+						"description": "Return the function calls from this passage in array.AsJSON format.",
+						"translated-name": "FunctionsAsJSON"
+						},
+					"variablesasjson21": {
+						"description": "Return the variables from this passage in array.AsJSON format.",
+						"translated-name": "VariablesAsJSON"
+						},
+					"pluginasjson22": {
+						"description": "Return the state of the plugin, inxcludin all stories and positions in those stories, AsJSON.",
+						"translated-name": "PluginAsJSON"
+						}
+				}
+			}
+		}
+	}
+}

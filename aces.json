@@ -1,0 +1,420 @@
+{
+	"settings": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "addstoryjson0",
+				"scriptName": "AddStoryJSON",
+				"highlight": false,
+				"params": [
+					{"id":"json0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 1,
+				"id": "selectstoryname1",
+				"scriptName": "SelectStoryName",
+				"highlight": false,
+				"params": [
+					{"id":"story0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "selectfirstpassage2",
+				"scriptName": "SelectFirstPassage",
+				"highlight": false
+			},
+			{
+				"c2id": 3,
+				"id": "selectpassagebyname3",
+				"scriptName": "SelectPassageByName",
+				"highlight": false,
+				"params": [
+					{"id":"passage0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 4,
+				"id": "selectpassagebyid4",
+				"scriptName": "SelectPassageByID",
+				"highlight": false,
+				"params": [
+					{"id":"index0", "type":"number"}
+				]
+			},
+			{
+				"c2id": 5,
+				"id": "addencryptedstoryjson5",
+				"scriptName": "AddEncryptedStoryJSON",
+				"highlight": false,
+				"params": [
+					{"id":"json0", "type":"string"},
+					{"id":"key1", "type":"string"}
+				]
+			},
+			{
+				"c2id": 6,
+				"id": "loadpluginfromjson6",
+				"scriptName": "LoadPluginFromJSON",
+				"highlight": false,
+				"params": [
+					{"id":"json0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 7,
+				"id": "cleanoutallstories7",
+				"scriptName": "cleanOutAllStories",
+				"highlight": false
+			},
+			{
+				"c2id": 8,
+				"id": "deletestory8",
+				"scriptName": "deleteStory",
+				"highlight": false,
+				"params": [
+					{"id":"story0", "type":"string"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"": {
+		"conditions": [
+			{
+				"c2id": 0,
+				"id": "canmovealong0",
+				"scriptName": "CanMoveAlong",
+				"highlight": false
+			},
+			{
+				"c2id": 1,
+				"id": "testfortag1",
+				"scriptName": "TestForTag",
+				"highlight": false,
+				"params": [
+					{"id":"tag0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "testforname2",
+				"scriptName": "TestForName",
+				"highlight": false,
+				"params": [
+					{"id":"name0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 3,
+				"id": "hasfunctioncall3",
+				"scriptName": "HasFunctionCall",
+				"highlight": false
+			},
+			{
+				"c2id": 4,
+				"id": "hasvariabledata4",
+				"scriptName": "HasVariableData",
+				"highlight": false
+			},
+			{
+				"c2id": 5,
+				"id": "hastagdata5",
+				"scriptName": "HasTagData",
+				"highlight": false
+			},
+			{
+				"c2id": 6,
+				"id": "hasreferencedata6",
+				"scriptName": "HasReferenceData",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"links": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 0,
+				"id": "numberoflinks0",
+				"expressionName": "NumberOfLinks",
+				"scriptName": "NumberOfLinks",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 1,
+				"id": "linknumberid1",
+				"expressionName": "LinkNumberID",
+				"scriptName": "LinkNumberID",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"index0", "type":"number"}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "linktextid2",
+				"expressionName": "LinkTextID",
+				"scriptName": "LinkTextID",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"index0", "type":"number"}
+				]
+			},
+			{
+				"c2id": 3,
+				"id": "linklabeltext3",
+				"expressionName": "LinkLabelText",
+				"scriptName": "LinkLabelText",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"index0", "type":"number"}
+				]
+			}
+		]
+	},
+	"tags": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 4,
+				"id": "numberoftags4",
+				"expressionName": "NumberOfTags",
+				"scriptName": "NumberOfTags",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 5,
+				"id": "tagatindex5",
+				"expressionName": "TagAtIndex",
+				"scriptName": "TagAtIndex",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"index0", "type":"number"}
+				]
+			},
+			{
+				"c2id": 18,
+				"id": "tagsasjson18",
+				"expressionName": "TagsAsJSON",
+				"scriptName": "TagsAsJSON",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	},
+	"passage": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 6,
+				"id": "passagetext6",
+				"expressionName": "PassageText",
+				"scriptName": "PassageText",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 7,
+				"id": "passagename7",
+				"expressionName": "PassageName",
+				"scriptName": "PassageName",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 9,
+				"id": "passageid9",
+				"expressionName": "PassageID",
+				"scriptName": "PassageID",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"encryption": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 8,
+				"id": "getencryptedstory8",
+				"expressionName": "GetEncryptedStory",
+				"scriptName": "GetEncryptedStory",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"key0", "type":"string"}
+				]
+			}
+		]
+	},
+	"variables": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 10,
+				"id": "noofvariables10",
+				"expressionName": "NoOfVariables",
+				"scriptName": "NoOfVariables",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 13,
+				"id": "variableatindex13",
+				"expressionName": "VariableAtIndex",
+				"scriptName": "VariableAtIndex",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"index0", "type":"number"}
+				]
+			},
+			{
+				"c2id": 14,
+				"id": "variablevalueatindex14",
+				"expressionName": "VariableValueAtIndex",
+				"scriptName": "VariableValueAtIndex",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"index0", "type":"number"}
+				]
+			},
+			{
+				"c2id": 21,
+				"id": "variablesasjson21",
+				"expressionName": "VariablesAsJSON",
+				"scriptName": "VariablesAsJSON",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	},
+	"objects": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 11,
+				"id": "noofobjectrefs11",
+				"expressionName": "NoOfObjectRefs",
+				"scriptName": "NoOfObjectRefs",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 12,
+				"id": "objectrefatindex12",
+				"expressionName": "ObjectRefAtIndex",
+				"scriptName": "ObjectRefAtIndex",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"index0", "type":"number"}
+				]
+			},
+			{
+				"c2id": 19,
+				"id": "objectsasjson19",
+				"expressionName": "ObjectsAsJSON",
+				"scriptName": "ObjectsAsJSON",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	},
+	"functions": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 15,
+				"id": "nooffunctioncalls15",
+				"expressionName": "NoOfFunctionCalls",
+				"scriptName": "NoOfFunctionCalls",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 16,
+				"id": "functioncallatindex16",
+				"expressionName": "FunctionCallAtIndex",
+				"scriptName": "FunctionCallAtIndex",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"index0", "type":"number"}
+				]
+			},
+			{
+				"c2id": 17,
+				"id": "functionparamsatindex17",
+				"expressionName": "FunctionParamsAtIndex",
+				"scriptName": "FunctionParamsAtIndex",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"index0", "type":"number"}
+				]
+			},
+			{
+				"c2id": 20,
+				"id": "functionsasjson20",
+				"expressionName": "FunctionsAsJSON",
+				"scriptName": "FunctionsAsJSON",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	},
+	"save": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 22,
+				"id": "pluginasjson22",
+				"expressionName": "PluginAsJSON",
+				"scriptName": "PluginAsJSON",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	}
+}
